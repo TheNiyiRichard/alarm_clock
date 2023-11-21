@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adeniyi Richard">
+    <link rel="stylesheet" href="./assets/style/index.css"/>
+    <title>Digital alarm clock</title>
+    <script src="./assets/script/index.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex-container">
+            <div id="clock"></div>
+            <div class="parent">
+                <div id="alarm-inputs">
+                    <input type="text" id="hourInput" placeholder="HH" maxlength="2" title="Please enter a valid hour (0-23)">
+                    <input type="text" id="minuteInput" placeholder="MM" maxlength="2"
+                        title="Please enter a valid minute (0-59)">
+                    <button id="set-alarm-btn" onclick="setAlarm()">Set Alarm</button>
+                </div>
+                <audio id="alarmSound" src="./assets/audio/mixkit-rooster-crowing-in-the-morning-2462.wav"
+                    preload="auto"></audio>
+                <div id="feedback-modal"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
